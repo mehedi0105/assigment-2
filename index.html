@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Link Css File-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Link Bootstrap File-->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <!--Link Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Assigment-2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header p-5">
+        <div class="div w-75 m-auto d-flex gap-3">
+          <input
+            class="p-3 w-75 rounded"
+            type="text"
+            placeholder="type player name"
+            id="input-box"
+          />
+          <input
+            type="submit"
+            value="search"
+            class="p-3 fs-5 fw-bold bg-primary text-white rounded"
+            id="search-btn"
+          />
+        </div>
+      </div>
+      <div class="main">
+        <div class="row">
+          <div class="col-8 product-container">
+            <div id="player-page" class="d-flex justify-content-between"></div>
+          </div>
+          <div class="col-4 cart pt-3">
+            <h4 class="text-center text-white fw-bold">This is Cart</h4>
+            <p class="cart-p fw-bold">
+              Total Player: <span id="count">0</span>
+            </p>
+            <p class="cart-p fw-bold">
+              Male Player: <span id="count1">0</span>
+            </p>
+            <p class="cart-p fw-bold">
+              Female Player: <span id="count2">0</span>
+            </p>
+            <div
+              id="cart-container"
+              class="d-flex justify-content-between cart-container"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Link JavaScript File-->
+    <script src="app.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  </body>
+</html>

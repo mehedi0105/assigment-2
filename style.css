@@ -1,0 +1,37 @@
+body {
+  background-color: #34568b !important;
+}
+.cart {
+  box-shadow: 4px 4px 16px gray;
+  background-color: #305082;
+}
+.cart-p {
+  color: #f77f00;
+}
+#player-page {
+  flex-wrap: wrap;
+}
+.player-box {
+  width: 30%;
+  box-shadow: 4px 4px 16px gray;
+  background-color: #305082;
+  padding: 10px;
+  color: aliceblue;
+}
+.player-img {
+  width: 100%;
+}
+.player-text-box {
+  padding: 10px;
+  line-height: 14px;
+}
+.cart-box {
+  width: 50%;
+  box-shadow: 4px 4px 16px gray;
+  background-color: #305082;
+  padding: 10px;
+  color: aliceblue;
+}
+.cart-container {
+  flex-wrap: wrap;
+}
